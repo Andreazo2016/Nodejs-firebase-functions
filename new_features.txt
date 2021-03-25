@@ -1,0 +1,3 @@
+ - [x] O usuário vai poder salvar um lembrate de uma conta para ele não esquecer de pagar.
+ - [x] O usuário vai informar nome, descrição, valor e a data de vencimento.
+ - [x] O sistema vai ter que verificar quais conta estão perto de se vencer, (verificar conta um dias antes), e mandar um email para o usuário com o lembrete.

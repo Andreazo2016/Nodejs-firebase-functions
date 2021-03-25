@@ -1,6 +1,6 @@
 const { Router } = require('express')
 const firebase = require('firebase')
-const { saveUser } = require('../services/firestoreService')
+const FirestoreService = require('../services/firestoreService')
 const authMiddleware = require('../middleware/Auth')
 
 const errosMessageFirebase = require('../erros/capture-error-message-firebase')
@@ -24,7 +24,7 @@ routes.post('/create', async (req, res) => {
 
     let userToSave = { id: user.uid, name, email }
 
-    await saveUser(userToSave)
+    await FirestoreService.saveUser(userToSave)
 
     return res.status(201).json(userToSave)
 
