@@ -1,3 +1,14 @@
  - [x] O usuário vai poder salvar um lembrate de uma conta para ele não esquecer de pagar.
  - [x] O usuário vai informar nome, descrição, valor e a data de vencimento.
  - [x] O sistema vai ter que verificar quais conta estão perto de se vencer, (verificar conta um dias antes), e mandar um email para o usuário com o lembrete.
+
+
+Task dia 26/03/2021 
+ Requisitos
+ - [] Será possível fazer upload de arquivo csv dos lembretes na aplicação.
+ - [] Será possivel a partir do csv importação do csv, inserir essas informação na base de dado.
+
+ Regra de negocio
+
+ - [] o csv contem os seguintes dados ( nome, descricao, data_de_vencimento, valor, cliente, email ) pode haver com cabeçalho ou não.
+ - [] caso o cliente passado no csv não esteja ainda cadastro, cadastrar ele.

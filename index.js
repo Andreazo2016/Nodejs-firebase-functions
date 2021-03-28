@@ -8,10 +8,12 @@ const serviceAccount = require("./firebase-admin-config.json");
 const userRouters = require('./src/routes/users.routes')
 const sessionsRouters = require('./src/routes/sessions.routes')
 const remendersRouters = require('./src/routes/reminders.routes')
+const uploadsRouters = require('./src/routes/upload.routes')
 
 exports.users = functions.https.onRequest(createApp({ routes: userRouters }))
 exports.sessions = functions.https.onRequest(createApp({ routes: sessionsRouters }))
 exports.reminders = functions.https.onRequest(createApp({ routes: remendersRouters }))
+exports.uploads = functions.https.onRequest(createApp({ routes: uploadsRouters }))
 
 
 // The Firebase Admin SDK to access Firestore.
