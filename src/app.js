@@ -1,4 +1,5 @@
 const express = require('express')
+require('./config/mongodb.config')
 
 module.exports = ({ routes }) => {
 

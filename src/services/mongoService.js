@@ -1,4 +1,4 @@
-require('../config/mongodb.config')
+
 const Reminder = require('../schemas/reminder')
 
 class MongoService {
